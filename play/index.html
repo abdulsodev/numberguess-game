@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumberGuessGame</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="overlay"></div>
+    <div class="alert-modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+           <h3> Alert</h3> 
+
+          <p class="alert"></p>
+          <div>
+            <button id="closemodal" class="subbtn">Close</button>
+        </div>
+        </div>
+
+
+
+     <div class="game-overlay"></div>
+      <div class="gameover-modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+           <h3> Alert</h3> 
+
+          <p class="gameover-alert"></p>
+          <div>
+            <button onclick="location.reload()" class="subbtn">Try again</button>
+        </div>
+        </div>
+
+
+        <div class="answer-overlay"></div>
+        <div class="answer-modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+             <h3> Alert</h3> 
+  
+            <p class="answer-alert"></p>
+            <div>
+              <button onclick="location.reload()" class="subbtn">Play Again</button>
+          </div>
+          </div>
+
+
+    <div class="container animate__animated animate__fadeInUp ">
+        <div class="form">
+            <div class="info">
+                <div >Attempts : <span id="attempts"></span> </div>
+                <div >Max Trials : <span id="trials"></span></div>
+
+            </div>
+            <input type="text" class="userinput" placeholder="Enter a Number">
+
+            <div>
+                <button id="btn" class="subbtn">Check</button>
+            </div>
+
+            <div class="message"></div>
+            <div class="number"></h1>
+        </div>
+
+    </div>
+
+
+    <script src="../app.js"></script>
+</body>
+</html>
